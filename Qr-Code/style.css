@@ -8,7 +8,7 @@
 }
 
 body, .wrapper {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #D5E1EF;
     display: flex;
     justify-content: center;
