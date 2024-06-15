@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "outfit", sans-serif;
+}
+
+body, .wrapper {
+    height: 100vh;
+    background-color: #D5E1EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This is the whole qr-code box with the image along with the content*/
+.box {
+    height: 60vh;
+    width: 18vw;
+    background-color: #FFF;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+/* this is the div inside which the qr-code image is present */
+.box-image {
+    height: 60%;
+}
+
+/* this is the actual image */
+#image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* this is the div inside which the qr-code content is present */
+.box-content {
+    height: 40%;
+    padding: 12px;
+    text-align: center;
+}
+
+/* this is the header text inside the qr-content div */
+#head-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(26, 26, 26);
+}
+
+/* this is the paragraph text inside the qr-content div */
+#paragraph-text {
+    padding-top: 16px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e868b;
+}
