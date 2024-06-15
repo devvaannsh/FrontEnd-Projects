@@ -1,0 +1,1 @@
+NFT-Card, A project taken from frontendmentor.io which is to be created by HTML & CSS.
