@@ -1,0 +1,40 @@
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* To target the whole page */
+body, wrapper {
+    height: 100vh;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Target the complete box from end to end */
+.box {
+    height: 52vh;
+    width: 46vw;
+    background-color: #F4F4F4;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+/* Target the result section of the box */
+.result-box {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(#7857ff, #2e2be9);
+}
+
+/* Target the summary section of the box */
+.summary-box {
+    width: 50%;
+    height: 100%;
+}
