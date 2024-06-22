@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* To target the whole page */
+body, wrapper {
+    height: 100vh;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* Target the complete box from end to end */
+.box {
+    height: 52vh;
+    width: 46vw;
+    background-color: #F4F4F4;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+/* Target the result section of the box */
+.result-box {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(#7857ff, #2e2be9);
+    border-radius: 20px 30px 30px 20px;
+    padding: 22px 54px;
+    text-align: center;
+    position: relative;
+}
+
+/* Target the result-heading from the result-section */
+.result-box .result-heading {
+    color: #C9C1F4; 
+    margin-bottom: 26px;
+}
+
+/* Target the result circle from the result-section */
+.result-box .result {
+    background-image: linear-gradient(#4e21ca, #2421ca00);
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Target the result-score inside the result circle */
+.result-box .result .result-score {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F4F3F4;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Target the outof-score inside the result circle */
+.result-box .result .outof-score {
+    color: #8174F4;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Target the great-text inside the result box */
+.result-box .great-text {
+    margin-top: 16px;
+    color: #F1F0F4;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Target the review-text inside the result box */
+.result-box .review-text {
+    color: #C9C1F4;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Target the summary section of the box */
+.summary-box {
+    width: 50%;
+    height: 100%;
+    padding: 22px 28px;
+}
+
+/* Target the summary-heading text inside the summary-box */
+.summary-heading h4{
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
+}
+
+/* Target the detailed-results section inside the summary-box */
+.detailed-results ul{
+    list-style-type: none;
+}
+
+/* Target each item inside the detailed-results ul */
+.detailed-results ul li {
+    margin-bottom: 12px;
+    border-radius: 6px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Target the text-icon section inside the detailed-results */
+.detailed-results ul li .text-icon {
+    display: inline-block;
+}
+
+/* Target the score section inside the detailed-results */
+.detailed-results ul li .score {
+    display: inline-block;
+    color: black;
+}
+
+/* Targets the outof 100 eg. (score/100) */
+.detailed-results ul .score .outof {
+    color: #8C8E9B;
+}
+
+/* Target the reaction li inside the detailed-results */
+.detailed-results ul .reaction {
+    background-color: #F4ECEB;
+    color: #DE6E72;
+}
+
+/* Target the memory li inside the detailed-results */
+.detailed-results ul .memory {
+    background-color: #F4F0E8;
+    color: #DAAC55;
+}
+
+/* Target the verbal li inside the detailed-results */
+.detailed-results ul .verbal {
+    background-color: #E8F0EF;
+    color: #38B393;
+}
+
+/* Target the visual li inside the detailed-results */
+.detailed-results ul .visual {
+    background-color: #E9E9F2;
+    color: #333292;
+    margin-bottom: 28px;
+}
+
+/* Target the icon before the texts */
+.detailed-results ul .text-icon::before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    background-color: aqua;
+    height: 14px;
+    width: 14px;
+}
+
+/* Target the icon before the texts personally */
+.detailed-results ul .reaction .text-icon::before {
+    content: url(./images/icon-reaction.svg);
+}
+.detailed-results ul .memory .text-icon::before {
+    content: url(./images/icon-memory.svg);
+}
+.detailed-results ul .verbal .text-icon::before {
+    content: url(./images/icon-verbal.svg);
+}
+.detailed-results ul .visual .text-icon::before {
+    content: url(./images/icon-visual.svg);
+}
+
+/* Target the continue button */
+.continue-button button {
+    display: block;
+    width: 100%;
+    background-color: #313C58;
+    color: white;
+    padding: 12px;
+    border-radius: 46px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+}
+
+/* Target the hover state of the continue button */
+.continue-button button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(#7857ff, #2e2be9);
+}
