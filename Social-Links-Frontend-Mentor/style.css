@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & wrapper are essentially the same */
+body,
+.wrapper {
+    height: 100vh; /* Body & wrapper takes the full screen height */
+    background-color: #171717;
+    display: flex; /* to center the box */
+
+    /* to center the box */
+    justify-content: center;
+    align-items: center;
+
+    /* Default font styles */
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* All the content is present inside this div */
+.box {
+    height: 70vh;
+    width: 26vw;
+    background-color: #212121; 
+    border-radius: 8px;
+}
+
+/* Profile section [profile image, name, address, quote] is inside this div */
+.profile-section {
+    height: 40%;
+}
+
+/* Avatar box is the complete box which covers 50% of the profile box [Note: it has the full width as of the box] */
+.profile-section .avatar-box {
+    height: 50%;
+
+    /* position set to relative so that avatar wrapper can be aligned at the bottom-center this div */
+    position: relative; 
+}
+
+/* name-address box is the complete box which covers 38% of the profile box [Note: it has the full width as of the box] */
+.profile-section .name-address-box {
+    height: 38%;
+}
+
+/* quote box is the complete box which covers 12% of the profile box [Note: it has the full width as of the box] */
+.profile-section .quote-box {
+    height: 12%;
+}
+
+/* Avatar wrapper is another box inside which the image is present */
+.profile-section .avatar-box .avatar-wrapper {
+    height: 68px;
+    width: 68px;
+
+    /* Move box to bottom-center of the main box */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    /* Make div round and hide the overflow to make the image circular */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* target the main image */
+.profile-section .avatar-box .avatar-wrapper img {
+    /* set height-width to 100% of the avatar-wrapper div, whose height width are already set as per requirement */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* styling name of the user */
+.profile-section .name-address-box #name-id {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+
+/* styling address of the user */
+.profile-section .name-address-box #address-id {
+    color: #c5f82a;
+}
+
+/* styling quote */
+.profile-section .quote-box #quote-id {
+    padding-top: 8px;
+    font-weight: 400;
+}
+
+/* Social section i.e. links to all social media is inside this div  */
+.social-links-section {
+    height: 60%;
+    padding: 20px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Style the boxes of social media links */
+.social-links-section .social-link {
+    width: 100%;
+    background-color: #343434;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Reset the anchor tag styles */
+.social-links-section .social-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Change styles when hover */
+.social-links-section .social-link:hover {
+    background-color: #c5f82a;
+}
+
+/* Change styles of anchor tag when hover */
+.social-links-section .social-link:hover a{
+    color: black;
+}
